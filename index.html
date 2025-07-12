@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metaetiquetas básicas -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Metaetiquetas adicionales (SEO y descripción) -->
+  <meta name="author" content="Osiel Mendez">
+  <meta name="description" content="Ejemplo práctico de fundamentos CSS: Box Model, Flexbox, Grid, Display, Posición y más.">
+  <meta name="keywords" content="HTML, CSS, Box Model, Flexbox, Grid, Position, Z-index, Display">
+  
+  <title>Fundamentos de CSS - Visual Studio Code</title>
+
+  <style>
+    /* Box Model */
+    .box-model {
+      width: 200px;
+      padding: 20px;
+      border: 5px solid #3498db;
+      margin: 20px;
+      background-color: #ecf0f1;
+    }
+
+    /* Display */
+    .display-examples span {
+      display: inline-block;
+      width: 100px;
+      background-color: #f39c12;
+      margin: 5px;
+      color: white;
+      text-align: center;
+    }
+
+    /* Position y Z-Index */
+    .position-container {
+      position: relative;
+      height: 200px;
+      background-color: #dfe6e9;
+      margin-bottom: 20px;
+    }
+
+    .pos-box {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: rgba(231, 76, 60, 0.9);
+      top: 30px;
+      left: 30px;
+      z-index: 1;
+    }
+
+    .pos-box2 {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: rgba(52, 152, 219, 0.9);
+      top: 50px;
+      left: 60px;
+      z-index: 2;
+    }
+
+    /* Flexbox */
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      background-color: #2ecc71;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .flex-item {
+      background-color: white;
+      padding: 20px;
+      flex: 1;
+      text-align: center;
+      border: 1px solid #27ae60;
+    }
+
+    /* Grid */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      background-color: #8e44ad;
+      padding: 10px;
+    }
+
+    .grid-item {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #6c3483;
+    }
+
+    /* Sticky y Fixed (propiedades útiles) */
+    .sticky-box {
+      position: sticky;
+      top: 0;
+      background: #f1c40f;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .fixed-box {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background: #e67e22;
+      padding: 10px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Fundamentos de CSS</h1>
+
+  <!-- Box Model -->
+  <section>
+    <h2>Box Model</h2>
+    <div class="box-model">
+      Este es un ejemplo del Box Model.
+    </div>
+  </section>
+
+  <!-- Display -->
+  <section>
+    <h2>Display</h2>
+    <div class="display-examples">
+      <span>Inline-block</span>
+      <span>Otro</span>
+    </div>
+  </section>
+
+  <!-- Position y Z-Index -->
+  <section>
+    <h2>Position & Z-Index</h2>
+    <div class="position-container">
+      <div class="pos-box">Caja 1</div>
+      <div class="pos-box2">Caja 2</div>
+    </div>
+  </section>
+
+  <!-- Flexbox -->
+  <section>
+    <h2>Flexbox</h2>
+    <div class="flex-container">
+      <div class="flex-item">Flex 1</div>
+      <div class="flex-item">Flex 2</div>
+      <div class="flex-item">Flex 3</div>
+    </div>
+  </section>
+
+  <!-- Grid -->
+  <section>
+    <h2>CSS Grid</h2>
+    <div class="grid-container">
+      <div class="grid-item">Grid 1</div>
+      <div class="grid-item">Grid 2</div>
+      <div class="grid-item">Grid 3</div>
+      <div class="grid-item">Grid 4</div>
+      <div class="grid-item">Grid 5</div>
+      <div class="grid-item">Grid 6</div>
+    </div>
+  </section>
+
+  <!-- Sticky -->
+  <div class="sticky-box">Elemento Sticky (se queda arriba al hacer scroll)</div>
+
+  <!-- Fixed -->
+  <div class="fixed-box">Caja Fija</div>
+
+</body>
+</html>
